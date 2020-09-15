@@ -233,6 +233,7 @@ class Pokestop extends Controller {
 					message: caresCache === this.config.discord.limitAmount + 1 ? { content: `You have reached the limit of ${this.config.discord.limitAmount} messages over ${this.config.discord.limitSec} seconds` } : message,
 					target: cares.id,
 					type: cares.type,
+                                        gruntRewards: data.gruntRewards,
 					name: cares.name,
 					tth: data.tth,
 					clean: cares.clean,
